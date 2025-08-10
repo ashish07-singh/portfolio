@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ashish Singh Rawat Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Ashish Singh Rawat</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+			  <li class="nav-item"><a href="#experience-section" class="nav-link"><span>Experience</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_2.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Ashish Singh Rawat</span></h1>
+
+					
+						<span id="typing-animation"></span>
+
+						<script>
+
+					
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						const typingTexts = [
+						'Flutter Developer  ',
+						'Python Developer  ',
+						'Backend Developer  ',
+						'Software Developer  ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <!-- <h2>MCA Graduate & Flutter Developer</h2> -->
+						<h2>Developer with a Vision</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.linkedin.com/in/ashish-singh-rawat07/" class="btn btn-primary py-3 px-4">LinkedIn</a> 
+							<a href="https://github.com/ashish07-singh" class="btn btn-white btn-outline-white py-3 px-4">Github</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/pic.jpg" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Ashish Singh Rawat</span></p>
+										<p><span class="title-s">Education: </span> <span>Master of Computer Application</span></p>
+										<p><span class="title-s">University: </span> <span>Graphic Era Hill University</span></p>
+										<p><span class="title-s">Address: </span> <span>Noida, Uttar Pradesh, India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>Flutter & Dart</span> <span class="pull-right"></span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Python & Django</span> <span class="pull-right"></span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Java & Spring Boot</span> <span class="pull-right"></span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Machine Learning</span> <span class="pull-right"></span>
+									<div class="progress">
+										<div class="progress-bar" role="progress-bar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>SQL & Database</span> <span class="pull-right"></span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									<span>HTML/CSS/JavaScript</span> <span class="pull-right"></span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									<span>Power BI & Tableau</span> <span class="pull-right"></span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								<span>Firebase</span> <span class="pull-right"></span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>I’m a tech enthusiast and computer science graduate with a strong passion for AI, machine learning, and modern web development. I enjoy exploring how technology can solve real-world problems and improve everyday life. With hands-on experience in tools like Python, TensorFlow, and React, I love creating intelligent, user-focused digital solutions.
+I’m always eager to learn, build, and grow—whether it's designing responsive front-end interfaces or training deep learning models. My goal is to combine creativity with logic to develop impactful and scalable tech solutions.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Job-Profile:</span> <span>Flutter Developer & Backend Development</span></li>
+									<li class="d-flex"><span>Programming Language:</span> <span>Java, C++, Python, SQL, JavaScript</span></li>
+									<li class="d-flex"><span>Core Abilities:</span> <span>Problem Solving, Debugging and Optimization, UI Awareness & Team Collaboration</span></li>
+									<li class="d-flex"><span>Frameworks / Libraries:</span> <span>Flutter, Spring Boot, Django, Firebase, REST APIs, Android SDK</span></li>
+									<li class="d-flex"><span>Concepts:</span> <span>RESTful APIs, Machine Learning, OOPs, DBMS & DSA, State Management</span></li>
+									<li class="d-flex"><span>Tools:</span> <span>VS Code, Android Studio, GitHub & Git, Figma, Postman, Power BI, Tableau</span></li>
+									<li class="d-flex"><span>Strength:</span> <span>Goal Oriented, Good Listener, Leadership Skills &amp; Focus on Time Management </span></li>
+									<li class="d-flex"><span>Hobbies:</span> <span>Playing Cricket, volleyBall And Badminton;  Reading Holy Books &amp; Listening Music </span></li>
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="5">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/ashish-singh-rawat07/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Career Objectives</h1>
+            <h2 class="mb-4">Career Objectives</h2>
+            <p>Enthusiastic MCA (2025 batch) postgraduate with a solid foundation in Python, Django, REST API development, ML, AI, and Data Structures & Algorithms. Gaining practical experience through a remote internship, contributing to building and enhancing scalable web and mobile applications. Proficient in writing clean, secure, and maintainable code following software engineering best practices. Enthusiastic about backend system design, microservices architecture, and working in Agile teams.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Certifications</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2024 - 2025</span>
+						<h2>Professional certifications</h2>
+						<br>
+						<h6>1.Frontend Developer React</h6>
+						<p>HackerRank</p>
+						<br>
+						<h6>2.Cybersecurity & Network Security</h6>
+						<p>Coursera</p>
+						<br>
+					<h6>3.Tools of the Trade: Linux and SQL</h6>
+					<p>Coursera</p>
+					<br>
+					<h6>4.Android App Development</h6>
+					<p>Self Learning</p>
+					<br>
+					<h6>5.Flutter Development</h6>
+					<p>Online Courses</p>
+									</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2023 - 2024</span>
+						<h2>Additional Skills</h2>
+						<br>
+						<h6>1.Statistics & Data Analysis</h6>
+						<p>Academic Projects</p>
+						<br>
+						<h6>2.Machine Learning Fundamentals</h6>
+						<p>Coursework & Projects</p>
+						<br>
+						<h6>3.Web Technologies</h6>
+						<p>Academic Curriculum</p>
+						<br>
+						<h6>4.Software Engineering</h6>
+						<p>Academic Projects</p>
+						<br>
+						<h6>5.Data Structures & Algorithms</h6>
+						<p>Academic Curriculum</p>
+						</div>
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2019-2022</span>
+    					<h2>B.Sc (Mathematics)</h2>
+    					<span class="position">Lucknow University</span>
+    					<p class="mt-4">Relevant Coursework: Mathematics, Statistics, Computer Science</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2023-2025</span>
+    					<h2>Master of Computer Application</h2>
+    					<span class="position">Graphic Era Hill University</span>
+    					<p class="mt-4">Relevant Coursework: Java Programming, Software Engineering, Data Structures, Web Technologies, Android App</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="https://drive.google.com/file/d/1NxCqfORnKfepX-N1PXrMzjnsyYctP4yp/view?usp=sharing" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+
+
+
+
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb" id="experience-section">
+	  <div class="container">
+		<div class="row justify-content-center mb-5 pb-3">
+		  <div class="col-md-7 heading-section text-center ftco-animate">
+			<h1 class="big big-2">Experience</h1>
+			<h2 class="mb-4">Experience</h2>
+			<p>Below are the details of my work experience.</p>
+		  </div>
+		</div>
+
+     <div class="row">
+			<h1 class="big-4">Internships</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">Jun 2025 - Present</span>
+    					<h2>Flutter Developer Intern</h2>
+    					<span class="position">WebArclight</span>
+    					<p class="mt-4">Remote (Dehradun, India)</p>
+    					
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2024 - 2025</span>
+    					<h2>Web Developer Intern</h2>
+    					<span class="position">GAOTek Inc.</span>
+    					<p class="mt-4">Remote (New York, USA)</p>
+    					
+    				</div>
+				</div>
+    		</div>
+			</div>
+			</section>
+		
+
+
+
+
+
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below I'm sharing a project that I worked on it by utilizing my skills, showcasing its features and functionality.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+					<div class="col-md-4 d-flex ftco-animate" data-aos="fade-up" data-aos-delay="100">
+						<div class="blog-entry justify-content-end">
+							<a href="https://github.com/ashish07-singh" class="block-20 zoom-effect" style="background-image: url('images/proj_1.png');">
+							</a>
+							<div class="text mt-3 float-right d-block">
+								<h3 class="heading"><a href="https://github.com/ashish07-singh">Hospital Management System</a></h3>
+								<p>Built an appointment system with separate logins for admin, doctor, and patient. Implemented role-based authentication and CRUD operations using Java, JDBC, Spring Boot, and MySQL.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 d-flex ftco-animate" data-aos="fade-up" data-aos-delay="200">
+						<div class="blog-entry justify-content-end">
+							<a href="https://github.com/ashish07-singh" class="block-20 zoom-effect" style="background-image: url('images/proj_2.png');">
+							</a>
+							<div class="text mt-3 float-right d-block">
+								<h3 class="heading"><a href="https://github.com/ashish07-singh">Sales Dashboard & Netflix Dashboard</a></h3>
+								<p>Utilized comprehensive sales datasets to design interactive dashboards in Power BI, showcasing key metrics like revenue trends, regional sales, and customer behavior with actionable insights.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 d-flex ftco-animate" data-aos="fade-up" data-aos-delay="300">
+						<div class="blog-entry">
+							<a href="https://github.com/ashish07-singh" class="block-20 zoom-effect" style="background-image: url('images/proj_3.png');">
+							</a>
+							<div class="text mt-3 float-right d-block">
+								<h3 class="heading"><a href="https://github.com/ashish07-singh">Crop Recommendation System</a></h3>
+								<p>Predicts suitable crops using ML models based on soil and climate conditions. Built with Python, Flask, and Scikit-learn, providing farmers with data-driven crop recommendations.</p>
+							</div>
+						</div>
+					</div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/ashish07-singh" class="block-20 zoom-effect" style="background-image: url('images/proj_4.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/ashish07-singh">Flutter Mobile App</a></h3>
+				  <p>Developed cross-platform mobile applications using Flutter and Dart. Integrated Firebase for authentication and real-time database, implemented responsive UI with Provider state management.
+
+ </p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/ashish07-singh" class="block-20 zoom-effect" style="background-image: url('images/proj_5.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/ashish07-singh">ChatBot Application</a></h3>
+				  <p>A simple Generative AI-based Chatbot web application that can respond to user prompts and answer questions about uploaded PDF documents.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/ashish07-singh" class="block-20 zoom-effect" style="background-image: url('images/proj_6.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/ashish07-singh">Data Analysis Projects</a></h3>
+				  <p>Conducted data analysis using Python, Pandas, and visualization tools. Created interactive dashboards and reports for business intelligence and decision-making processes.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="3">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="6">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="2">0</strong>
+                <span>Years Experience</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="100">0</strong>
+                <span>Hours Coding</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+						<br>
+						<p><a href="https://github.com/ashish07-singh" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Noida, Uttar Pradesh, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://+91-7860337984">+91-7860337984</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:ashishsinghrawat649@gmail.com">ashishsinghrawat649@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">GitHub Profile</h3>
+	            <p><a href="https://github.com/ashish07-singh">github.com/ashish07-singh</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://docs.google.com/forms/d/e/1FAIpQLSe3NTVcaMZ1zJRK2vSfC4X0T4K5MRIYcrB302U9vRHZxBnEig/viewform?usp=header" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://github.com/ashish07-singh"><span class="icon-github"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/ashish-singh-rawat07/"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="mailto:ashishsinghrawat649@gmail.com"><span class="icon-mail"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+<p>THANKS FOR VISITING MY PORTFOLIO WEBSITE.</p>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+	<script src="js/main.js"></script>
+	<script>
+		// Initialize AOS (Animate On Scroll)
+		AOS.init({
+			duration: 1000,
+			once: true
+		});
+	</script>
+  </body>
+</html>
